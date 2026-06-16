@@ -1,0 +1,120 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1000px;
+    background: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: flex;
+    overflow: hidden;
+}
+
+.form-panel {
+    flex: 1;
+    padding: 32px;
+    border-right: 1px solid #dadce0;
+}
+
+.preview-panel {
+    flex: 1;
+    padding: 32px;
+    background-color: #f8f9fa;
+}
+
+h2 {
+    font-size: 22px;
+    color: #1a73e8;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3c4043;
+    margin-bottom: 6px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+input:focus, select:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 1px #1a73e8;
+}
+
+button {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #1a73e8;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #1557b0;
+}
+
+.output-box {
+    font-size: 16px;
+    color: #3c4043;
+    line-height: 1.6;
+}
+
+.placeholder-text {
+    color: #80868b;
+    font-style: italic;
+}
+
+.data-item {
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #dadce0;
+}
+
+.data-item strong {
+    color: #1a73e8;
+    display: inline-block;
+    width: 140px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .form-panel {
+        border-right: none;
+        border-bottom: 1px solid #dadce0;
+    }
+}

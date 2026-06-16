@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="form-panel">
+        <h2>Employee Form</h2>
+        <form id="employeeForm">
+            <div class="input-group">
+                <label for="name">First Name</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" required>
+            </div>
+
+            <div class="input-group">
+                <label for="salary">Salary ($)</label>
+                <input type="number" id="salary" min="0" required>
+            </div>
+
+            <div class="input-group">
+                <label for="birthdate">Birthdate</label>
+                <input type="date" id="birthdate" required>
+            </div>
+
+            <div class="input-group">
+                <label for="experience">Experience Level</label>
+                <select id="experience" required>
+                    <option value="" disabled selected>Select level</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
+            <button type="submit" id="submitBtn">Submit Data</button>
+        </form>
+    </div>
+
+    <div class="preview-panel">
+        <h2>Submitted Preview</h2>
+        <div id="outputDisplay" class="output-box">
+            <p class="placeholder-text">No data submitted yet. Fill the form and click submit.</p>
+        </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
